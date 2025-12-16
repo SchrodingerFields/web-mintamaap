@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Playfair Display', serif; 
+    background-color: #FEEAE6; 
+    color: #6B2D38; 
+    line-height: 1.6;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+header {
+    padding: 40px 20px;
+    border-bottom: 1px solid #B05F6D; 
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #B05F6D; 
+    letter-spacing: 2px;
+}
+
+
+#beranda {
+    padding: 50px 20px;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+#beranda h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #6B2D38;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-family: 'Georgia', serif; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #B05F6D; 
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(176, 95, 109, 0.4); 
+}
+
+.btn:hover {
+    background-color: #9C4B59; 
+    transform: scale(1.05); 
+}
+
+
+#ilimu {
+    padding: 30px 20px;
+    background-color: #F8E3E0; 
+    border-top: 2px dashed #E5B880; 
+    border-bottom: 2px dashed #E5B880;
+    margin-bottom: 40px;
+}
+
+#ilimu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6B2D38;
+}
+
+.ilimu-alt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ilimu-alt p {
+    flex-basis: 50%; 
+    text-align: left;
+    font-size: 1.1rem;
+    font-style: italic;
+    padding-right: 20px;
+}
+
+.ilimu-img {
+    flex-basis: 50%; 
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 8px 15px rgba(107, 45, 56, 0.2);
+}
+
+.ilimu-img img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    transition: transform 0.5s ease;
+}
+
+.ilimu-img img:hover {
+    transform: scale(1.05); 
+}
+
+footer {
+    padding: 20px 20px;
+    font-size: 0.9rem;
+    color: #E5B880; 
+    font-style: italic;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    #beranda h2 {
+        font-size: 2.5rem;
+    }
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    
+    .ilimu-alt {
+        flex-direction: column; 
+        gap: 30px;
+    }
+    .ilimu-alt p, .ilimu-img {
+        flex-basis: 100%; 
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header {
+        margin-bottom: 20px;
+    }
+    .logo {
+        font-size: 1.8rem;
+    }
+    #beranda h2 {
+        font-size: 2rem;
+    }
+    .tagline {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    #ilimu {
+        padding: 20px 10px;
+    }
+}
